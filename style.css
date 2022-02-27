@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&family=VT323&display=swap');
+
+@font-face {
+    font-family: 'joystick';
+    src: url('fonts/joystix\ monospace.ttf');
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+:root{
+    --cor0: #C6B39D;
+    --cor1: #000064;
+    --cor2: #03014E;
+    --cor3: #07049B;
+    --cor4: #A16567;
+
+    --font-nav: 'VT323', monospace;
+    --font-padrao: 'Share Tech Mono', monospace;
+    --font-game: 'joystick', monospace;
+}
+
+body{
+    background-image: url('imagens/coin-background.jpg');
+}
+
+header{
+    background-image: url('imagens/arcade-escuro.jpg');
+    width: 100%;
+    min-width: 300px;
+}
+
+header h1{
+    font-family: var(--font-game);
+    color: white;    
+    text-shadow: 3px 4px 5px  rgb(0, 39, 0);
+    text-align: center;
+    padding: 50px 0px;
+
+}
+
+header p{
+    font-family: var(--font-game);
+    background-image: linear-gradient(to top, var(--cor2), var(--cor3));
+    color: rgb(252, 252, 252);
+    text-shadow: 3px 2px 3px black;
+    text-align: center;
+    padding: 20px 20px 30px 20px;
+    margin-top: 20px;
+}
+
+header > nav{
+    background-color: var(--cor2);  
+    padding: 10px 0px;
+    text-align: center;
+      
+}
+
+header > nav > ul{  
+    display: flex; 
+    list-style: none;
+    
+   
+}
+
+header > nav > ul > li{   
+    font-family: var(--font-nav);
+    font-size: 1.4em;  
+    font-size: normal; 
+    
+}
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color:var(--cor0);      
+    padding: 10px 30px;
+    border-radius: 8px;
+    margin-bottom: 3px;
+}
+
+header > nav > ul > li > a:hover{
+    background-color: var(--cor3);
+}
+
+main{
+    font-family: var(--font-padrao);
+    display: block;
+    padding: 20px;
+    background-color: white;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.493);
+    border-radius: 5px;
+
+}
+
+main h2{
+    width: 100%;
+    font-family: var(--font-nav);
+    font-weight: 500;
+    color: white;
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    text-indent: 15px;
+    margin-top: -15px;
+    margin-bottom: 20px
+}
+
+main p{
+    text-align: justify;
+}
+
+.titulo2{
+    font-family: var(--font-nav);
+    font-weight: 500;
+    color: white;
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    text-indent: 15px;
+    margin: 20px 0px;
+}
+
+main a{
+    text-decoration: none;
+    background-color: var(--cor0);
+    color: var(--cor3);
+    padding: 0px 4px;
+}
+
+main a:hover{
+    color: var(--cor4);
+    background-color: var(--cor3);
+}
+
+.magnavox{
+    display: inline-block;
+    margin: 20px 20px; 
+    padding-right: 2px;  
+    min-width: 300px; 
+    max-width: 400px;
+}
+
+.snes{
+    display: inline-block;
+    margin: 20px 20px; 
+    padding-right: 2px;  
+    min-width: 300px; 
+    max-width: 400px;
+}
+
+.before-video{
+    margin-bottom: 20px;
+}
+
+main p{
+    text-indent: 18px;
+    line-height: 1.5em;
+}
+
+main div.video{
+    background-color: var(--cor2);
+    margin: 0px 13px 30px 20px;
+    padding: 5px;
+    padding-bottom: 60%;
+    position: relative;
+}
+
+main div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer{    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor3);
+    margin-top: 30px;
+    padding: 7px 0px;
+}
+
+footer > p{  
+    text-align: center; 
+    text-indent: 20px;
+    font-family: var(--font-padrao);
+    color: var(--cor0);
+    
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: white;
+    font-size: normal;
+
+}
+
+footer > p > a:hover{
+    color: var(--cor4);
+}
+    
